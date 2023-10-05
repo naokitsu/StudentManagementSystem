@@ -1,6 +1,6 @@
 using System.Runtime.InteropServices.ComTypes;
 
-namespace StudentManagmentSystem;
+namespace StudentManagementSystem;
 
 public class Student
 {
@@ -20,7 +20,7 @@ public class Student
 
     public override string ToString()
     {
-        return String.Format("{0} {1} (ID: {3}, Возраст: {2})", FirstName, SecondName, Age, ID);
+        return $"{FirstName} {SecondName} (ID: {ID}, Возраст: {Age})";
     }  
     
 }
