@@ -7,10 +7,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc5e85d9-a8d1-40be-8cd7-ddf17002ff20" name="Changes" comment="Delete HeadStudents">
-      <change afterPath="$PROJECT_DIR$/StudentManagementSystem/Group.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StudentManagementSystem/StudentManagementSystem.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StudentManagmentSystem/Student.cs" beforeDir="false" afterPath="$PROJECT_DIR$/StudentManagementSystem/Student.cs" afterDir="false" />
+    <list default="true" id="cc5e85d9-a8d1-40be-8cd7-ddf17002ff20" name="Changes" comment="Correct typo">
+      <change afterPath="$PROJECT_DIR$/StudentManagementSystem/Keymap.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudentManagementSystem/Strings.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudentManagementSystem/Strings.resx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudentManagementSystem/Strings.ru.resx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.StudentManagmentSystem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StudentManagmentSystem/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StudentManagementSystem/StudentManagementSystem.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/StudentManagementSystem/StudentManagementSystem.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +88,7 @@
       <option name="presentableId" value="Default" />
       <updated>1695891846877</updated>
       <workItem from="1695891848170" duration="4227000" />
-      <workItem from="1696484047828" duration="730000" />
+      <workItem from="1696484047828" duration="5110000" />
     </task>
     <task id="LOCAL-00001" summary="Create student class">
       <option name="closed" value="true" />
@@ -119,7 +122,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695894456069</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Correct typo">
+      <option name="closed" value="true" />
+      <created>1696484804926</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1696484804926</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,39 +143,10 @@
     <MESSAGE value="Add HeadStudent" />
     <MESSAGE value="Add ToString to Student" />
     <MESSAGE value="Delete HeadStudents" />
-    <option name="LAST_COMMIT_MESSAGE" value="Delete HeadStudents" />
+    <MESSAGE value="Correct typo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correct typo" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/StudentManagementSystem/Group.cs</url>
-          <line>64</line>
-          <properties documentPath="$PROJECT_DIR$/StudentManagmentSystem/Group.cs" initialLine="60" containingFunctionPresentation="Method 'ToString'">
-            <startOffsets>
-              <option value="1501" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1542" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/StudentManagementSystem/Group.cs</url>
-          <line>53</line>
-          <properties documentPath="$PROJECT_DIR$/StudentManagmentSystem/Group.cs" initialLine="53" containingFunctionPresentation="Method 'ToString'">
-            <startOffsets>
-              <option value="1224" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1263" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="Type#StudentManagmentSystem.Group" memberName="Students" />
