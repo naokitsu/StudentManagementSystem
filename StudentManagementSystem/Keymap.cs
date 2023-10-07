@@ -1,5 +1,8 @@
 namespace StudentManagementSystem;
 
+/// <summary>
+/// Клавиши управления пользователя
+/// </summary>
 public enum Key
 {
     Add,
@@ -16,38 +19,33 @@ public enum Key
     No,
 }
 
+/// <summary>
+/// Класс отвечающий за маппинг клавиш к действиям
+/// </summary>
 public static class Keymap
 {
+    /// <summary>
+    /// Получить клавишу управления по ConsoleKey
+    /// </summary>
+    /// <param name="consoleKey">Клавиша пользователя</param>
+    /// <returns>Клавиша действия</returns>
     public static Key? ConsoleKey2Key(ConsoleKey consoleKey)
     {
-        switch (consoleKey)
+        return consoleKey switch
         {
-            case ConsoleKey.A:
-                return Key.Add;
-            case ConsoleKey.R:
-                return Key.Remove;
-            case ConsoleKey.S:
-                return Key.Select;
-            case ConsoleKey.D0:
-                return Key.Zero;
-            case ConsoleKey.D1:
-                return Key.One;
-            case ConsoleKey.D2:
-                return Key.Two;
-            case ConsoleKey.D3:
-                return Key.Three;
-            case ConsoleKey.M:
-                return Key.Mode;
-            case ConsoleKey.E:
-                return Key.Exit;
-            case ConsoleKey.T:
-                return Key.Type;
-            case ConsoleKey.Y:
-                return Key.Yes;
-            case ConsoleKey.N:
-                return Key.No;
-            default:
-                return null;
-        }
+            ConsoleKey.A => Key.Add,
+            ConsoleKey.R => Key.Remove,
+            ConsoleKey.S => Key.Select,
+            ConsoleKey.D0 => Key.Zero,
+            ConsoleKey.D1 => Key.One,
+            ConsoleKey.D2 => Key.Two,
+            ConsoleKey.D3 => Key.Three,
+            ConsoleKey.M => Key.Mode,
+            ConsoleKey.E => Key.Exit,
+            ConsoleKey.T => Key.Type,
+            ConsoleKey.Y => Key.Yes,
+            ConsoleKey.N => Key.No,
+            _ => null
+        };
     }
 }

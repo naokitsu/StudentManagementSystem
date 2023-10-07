@@ -2,28 +2,65 @@ using System.Runtime.InteropServices.ComTypes;
 
 namespace StudentManagementSystem;
 
+/// <summary>
+/// Класс студента, хранит в себе информацию о студентах
+/// </summary>
 public class Student : INamed
 {
+    /// <summary>
+    /// Свободный ID, так как каждый студент должен обладать уникальным ID (чтобы мы могли гарантирванно упаковывать их
+    /// в словари без колизий), мы используем статическое поле, которое хранит следующий свободный ID 
+    /// </summary>
     public static uint FreeId;
+    
+    /// <summary>
+    /// Имя
+    /// </summary>
     public string FirstName { get; set; }
+    
+    /// <summary>
+    /// Фамилия
+    /// </summary>
     public string SecondName { get; set; }
+    
+    /// <summary>
+    /// Возраст
+    /// </summary>
     public uint Age { get; set; }
 
-    public uint ID { get; }
+    /// <summary>
+    /// ID Студента
+    /// </summary>
+    public uint Id { get; }
     
+    /// <summary>
+    /// Конструктор студента
+    /// </summary>
+    /// <param name="firstName">Имя</param>
+    /// <param name="secondName">Фамилия</param>
+    /// <param name="age">Возраст</param>
     public Student(string firstName, string secondName, uint age)
     {
         FirstName = firstName;
         SecondName = secondName;
         Age = age;
-        ID = FreeId;
-        FreeId += 1;
+        Id = FreeId;
+        FreeId += 1;// Обновляем свободный ID для следующего студента
     }
+    
+    /// <summary>
+    /// Вернуть имя студента
+    /// </summary>
+    /// <returns>Имя студента</returns>
     public string Name()
     {
         return $"{FirstName} {SecondName} (Age: {Age})";
     }
 
+    /// <summary>
+    /// Открыть меню студента, нам не нужна реализация ToString() от Menu, поэтому не наследуем
+    /// </summary>
+    /// <param name="readOnly"></param>
     public void StudentMenu(ref bool readOnly)
     {
         while (true)
@@ -87,6 +124,10 @@ public class Student : INamed
         }
     }
     
+    /// <summary>
+    /// Перевод студента в строку
+    /// </summary>
+    /// <returns>Текстовая репрезентация студента</returns>
     public override string ToString()
     {
         return $"0: {Strings.NameSemicolon}{FirstName}\n1: {Strings.SecondNameSemicolon}{SecondName}\n2: {Strings.AgeSemicolon}{Age}";
