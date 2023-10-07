@@ -2,20 +2,20 @@ namespace StudentManagementSystem;
 
 public sealed class Group : Menu, INamed
 {
-    private static uint _freeId;
+    public static uint FreeId;
 
-    private string Name { get; }
-    private IDictionary<uint, Student> Students { get; } = new Dictionary<uint, Student>();
+    public string Name { get; }
+    public IDictionary<uint, Student> Students { get; } = new Dictionary<uint, Student>();
 
 
-    private readonly IList<uint> _headStudents = new List<uint>();
+    public readonly IList<uint> _headStudents = new List<uint>();
     public uint Id { get; }
 
     public Group(string name)
     {
         Name = name;
-        Id = _freeId;
-        _freeId += 1;
+        Id = FreeId;
+        FreeId += 1;
     }
 
     private void SetHeadStudent(uint id, bool isHeadStudent)

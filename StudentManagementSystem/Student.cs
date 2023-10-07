@@ -4,8 +4,8 @@ namespace StudentManagementSystem;
 
 public class Student : INamed
 {
-    private static uint _freeId;
-    private string FirstName { get; set; }
+    public static uint FreeId;
+    public string FirstName { get; set; }
     public string SecondName { get; set; }
     public uint Age { get; set; }
 
@@ -16,8 +16,8 @@ public class Student : INamed
         FirstName = firstName;
         SecondName = secondName;
         Age = age;
-        ID = _freeId;
-        _freeId += 1;
+        ID = FreeId;
+        FreeId += 1;
     }
     public string Name()
     {
