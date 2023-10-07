@@ -99,7 +99,32 @@
     <data name="StudentIDToRemove" xml:space="preserve">
         <value>Student ID to remove: </value>
     </data>
-    <data name="NewString" xml:space="preserve">
+    <data name="NewStudent" xml:space="preserve">
         <value>New Student: </value>
+    </data>
+    <data name="EnterTheFileToOpen" xml:space="preserve">
+        <value>Enter the file to open (input nothing to create the new storage): </value>
+    </data>
+    <data name="EnterTheSaveFile" xml:space="preserve">
+        <value>Enter the file to save into (input nothing to discard storage): </value>
+    </data>
+    <data name="GoingToDiscard" xml:space="preserve">
+        <value>Are you going to discard the file?
+[Y] - Yes
+[N] - No</value>
+    </data>
+    <data name="StorageDiscarded" xml:space="preserve">
+        <value>Storage was discarded</value>
+    </data>
+    <data name="GoingToOverwrite" xml:space="preserve">
+        <value>Are you going to overwrite the file?
+[Y] - Yes
+[N] - No</value>
+    </data>
+    <data name="FileOverwritten" xml:space="preserve">
+        <value>File is going to be overwritten</value>
+    </data>
+    <data name="StorageSaved" xml:space="preserve">
+        <value>Storage was saved</value>
     </data>
 </root>

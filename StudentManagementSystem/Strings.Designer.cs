@@ -203,7 +203,49 @@ namespace StudentManagementSystem {
         
         internal static string NewStudent {
             get {
-                return ResourceManager.GetString("NewString", resourceCulture);
+                return ResourceManager.GetString("NewStudent", resourceCulture);
+            }
+        }
+        
+        internal static string EnterTheFileToOpen {
+            get {
+                return ResourceManager.GetString("EnterTheFileToOpen", resourceCulture);
+            }
+        }
+        
+        internal static string EnterTheSaveFile {
+            get {
+                return ResourceManager.GetString("EnterTheSaveFile", resourceCulture);
+            }
+        }
+        
+        internal static string GoingToDiscard {
+            get {
+                return ResourceManager.GetString("GoingToDiscard", resourceCulture);
+            }
+        }
+        
+        internal static string StorageDiscarded {
+            get {
+                return ResourceManager.GetString("StorageDiscarded", resourceCulture);
+            }
+        }
+        
+        internal static string GoingToOverwrite {
+            get {
+                return ResourceManager.GetString("GoingToOverwrite", resourceCulture);
+            }
+        }
+        
+        internal static string FileOverwritten {
+            get {
+                return ResourceManager.GetString("FileOverwritten", resourceCulture);
+            }
+        }
+        
+        internal static string StorageSaved {
+            get {
+                return ResourceManager.GetString("StorageSaved", resourceCulture);
             }
         }
     }

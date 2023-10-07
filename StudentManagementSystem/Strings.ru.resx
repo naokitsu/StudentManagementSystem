@@ -58,9 +58,6 @@
     <data name="NewGroup" xml:space="preserve">
         <value>Новая группа: </value>
     </data>
-    <data name="NewString" xml:space="preserve">
-        <value>Новый студент: </value>
-    </data>
     <data name="Promote" xml:space="preserve">
         <value>повысить</value>
     </data>
@@ -96,5 +93,33 @@
     </data>
     <data name="StudentIDToRemove" xml:space="preserve">
         <value>ID студента для удаления: </value>
+    </data>
+    <data name="NewStudent" xml:space="preserve">
+        <value>Новый студент: </value>
+    </data>
+    <data name="StorageSaved" xml:space="preserve">
+        <value>Хранилище было сохранено</value>
+    </data>
+    <data name="StorageDiscarded" xml:space="preserve">
+        <value>Хранилище было утрачено</value>
+    </data>
+    <data name="EnterTheFileToOpen" xml:space="preserve">
+        <value>Введите файл для открытия (введите пустую строку для создания нового хранилища)</value>
+    </data>
+    <data name="EnterTheSaveFile" xml:space="preserve">
+        <value>Введите файл для записи (введите пустую строку для утраты файла)</value>
+    </data>
+    <data name="FileOverwritten" xml:space="preserve">
+        <value>Файл будет перезаписан</value>
+    </data>
+    <data name="GoingToDiscard" xml:space="preserve">
+        <value>Файл не будет сохранен, вы уверены?
+[Y] - Да
+[N] - Нет</value>
+    </data>
+    <data name="GoingToOverwrite" xml:space="preserve">
+        <value>Файл будет перезаписан, вы уверены?
+[Y] - Да
+[N] - Нет</value>
     </data>
 </root>
